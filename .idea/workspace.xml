@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f74b214a-5bcd-481d-8898-749bb89dd20a" name="Changes" comment="date complete, init training">
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+    <list default="true" id="f74b214a-5bcd-481d-8898-749bb89dd20a" name="Changes" comment="add config.py, automatizando processos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook/01_Aquisicao_dados.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/01_Aquisicao_dados.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook/02_Padronizaçao_dados.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/02_Padronizaçao_dados.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/03_treinamento_modelo_lstm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/03_treinamento_modelo_lstm.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/04_avaliacao_e_previsao.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/04_avaliacao_e_previsao.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,25 +54,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/marolli/Projetos/TCC_2025&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/marolli/Projetos/TCC_2025",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -134,6 +134,9 @@
       <workItem from="1761770108341" duration="413000" />
       <workItem from="1761882035620" duration="3838000" />
       <workItem from="1762059816246" duration="3303000" />
+      <workItem from="1762128824131" duration="2069000" />
+      <workItem from="1762212691467" duration="4719000" />
+      <workItem from="1762301282415" duration="8464000" />
     </task>
     <task id="LOCAL-00001" summary="init extract date">
       <option name="closed" value="true" />
@@ -191,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761883419088</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add config.py, automatizando processos">
+      <option name="closed" value="true" />
+      <created>1762128986602</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762128986602</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +226,8 @@
     <MESSAGE value="init extract date 2" />
     <MESSAGE value="init extract date" />
     <MESSAGE value="date complete, init training" />
-    <option name="LAST_COMMIT_MESSAGE" value="date complete, init training" />
+    <MESSAGE value="add config.py, automatizando processos" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config.py, automatizando processos" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TCC_2025$main.coverage" NAME="main Coverage Results" MODIFIED="1757647990805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
